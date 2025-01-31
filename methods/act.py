@@ -11,8 +11,8 @@ def act(x0, x1, lambda_param=1e-3):
     N = x0.size(0)
     D = x0.size(1)
     
-    x0 = sqrt(D) * normalize(x0)
-    x1 = sqrt(D) * normalize(x1)
+    x0 = normalize(x0)
+    x1 = normalize(x1)
 
     c = x0.T @ x1 / N # DxD
     c_diff = c - eye(D, device=c.device)
