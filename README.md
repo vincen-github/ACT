@@ -3,7 +3,7 @@
 Official repository of the paper **Unsupervised Transfer Learning via Adversarial Contrastive Training** 
 
 ## Organization
-The checkpoints are stored in the `data` directory every 100 epochs during training. All reported results in the paper can be reproduced using the `.pt` files in the `model` directory. The `dataset` directory contains the code for reading various datasets, while the `eval` directory includes code related to evaluation. The `method` directory contains the implementation of ACT, and `model.py` defines the encoder structure.
+The checkpoints are stored in the `models` directory every 100 epochs during training and are used to be reproduced the reported results. The `dataset` directory contains the code for reading various datasets, while the `eval` directory includes code related to evaluation. The `method` directory contains the implementation of ACT, and `model.py` defines the encoder structure.
 
 ## Supported Models
 - ACT(Ours)
